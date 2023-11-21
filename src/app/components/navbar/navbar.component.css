@@ -1,3 +1,7 @@
 button{
    color: dc2f02
 }
+.test{
+   display:flex;
+   align-items: right;
+}
