@@ -6,6 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class EmployeeService {
+ 
   constructor(private _http: HttpClient) {}
 
   addEmployee(value: any) : Observable<any>{
@@ -13,6 +14,9 @@ export class EmployeeService {
   }
   updateEmployee(id: any, value: any) {
     throw new Error('Method not implemented.');
+  }
+  getEmployeeList() : Observable<any>{
+    return this._http.get(" http://localhost:3000/employee");
   }
 
 }
