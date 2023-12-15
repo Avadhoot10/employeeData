@@ -1,4 +1,17 @@
 table {
     width: 100%;
   }
+
+  /* making table responsive */
+  .mat-cell {
+    padding: 8px;
+    text-align: left;
+    word-wrap: break-word;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .mat-cell {
+      font-size: 12px;
+    }
+  }
   

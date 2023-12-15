@@ -1,27 +1,27 @@
 {
   "employee": [
     {
-      "id": 1,
-      "firstName": "json-server",
-      "lastName": "typicode",
-      "email": "typicode",
-      "dob": "typicode",
-      "gender": "typicode",
-      "education": "typicode",
-      "company": "typicode",
-      "experience": "typicode",
-      "package": "typicode"
+      "firstName": "Abhijeet",
+      "lastName": "Pandhre",
+      "email": "abhijeet@ae.com",
+      "dob": "1995-12-20T18:30:00.000Z",
+      "gender": "male",
+      "education": "Diploma",
+      "company": "AE",
+      "experience": 3,
+      "package": 3,
+      "id": 1
     },
     {
-      "firstName": "Ajit",
-      "lastName": "Pokale",
-      "email": "ajiy@gmail.com",
-      "dob": "2023-11-21T18:30:00.000Z",
+      "firstName": "Tohid",
+      "lastName": "Jamadar",
+      "email": "tohid@ae.com",
+      "dob": "2023-12-21T18:30:00.000Z",
       "gender": "male",
-      "education": "Post Graduate",
-      "company": "TT",
+      "education": "Graduate",
+      "company": "AE",
       "experience": 2,
-      "package": 22,
+      "package": 3.6,
       "id": 2
     }
   ]
