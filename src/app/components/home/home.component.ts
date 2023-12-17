@@ -8,17 +8,6 @@ import { MatSort } from '@angular/material/sort';
 import { MatPaginator } from '@angular/material/paginator';
 import { CoreService } from 'src/app/shared/coreService/core.service';
 
-export interface PeriodicElement {
-  name: string;
-  position: number;
-  email: string;
-  company: string;
-}
-
-const ELEMENT_DATA: PeriodicElement[] = [
-  { position: 1, name: 'Hydrogen', email: "1.0079", company: 'H' },
-
-];
 
 /**
  * @title Basic use of `<table mat-table>`
@@ -38,6 +27,7 @@ export class HomeComponent implements OnInit {
   ) { }
   displayedColumns: string[] = ['position', 'name', 'email', 'company', 'Action'];
   dataSource: any = [];
+  dummyArray:any=[];
   @ViewChild(MatSort) sort!: MatSort;
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
@@ -51,6 +41,8 @@ export class HomeComponent implements OnInit {
 
         this.dataSource = new MatTableDataSource(res);
         this.dataSource.sort = this.sort;
+        this.dummyArray=res
+        
         this.dataSource.paginator = this.paginator;
       },
       error: console.log,
@@ -83,10 +75,16 @@ export class HomeComponent implements OnInit {
         console.log(err);
         
       }
-
     })
+  }
 
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
 
+    if (this.dataSource.paginator) {
+      this.dataSource.paginator.firstPage();
+    }
   }
 
 }

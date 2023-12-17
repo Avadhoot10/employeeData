@@ -23,6 +23,18 @@
       "experience": 2,
       "package": 3.6,
       "id": 2
+    },
+    {
+      "firstName": "Sandeep",
+      "lastName": "Patil",
+      "email": "sandeeppp@ae.com",
+      "dob": "2023-12-20T18:30:00.000Z",
+      "gender": "male",
+      "education": "Graduate",
+      "company": "AE",
+      "experience": 4,
+      "package": 5,
+      "id": 3
     }
   ]
 }
